@@ -282,5 +282,5 @@ if __name__ == "__main__":
 
     # AJUSTE 2: Aumentamos 'k' para que recupere más contexto
     retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
-
-    demo.launch(server_name="0.0.0.0", server_port=9090)
+    puerto = int(os.environ.get("PORT", 9090))
+    demo.launch(server_name="0.0.0.0", server_port=puerto)

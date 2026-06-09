@@ -31,7 +31,7 @@ load_dotenv()
 CARPETA_ESPECIALIDAD = Path("especialidad")
 DIRECTORIO_VECTORSTORE = Path("vectorstore")
 FORMATOS = {".pdf": "PDF", ".txt": "TXT", ".md": "Markdown"}
-EMBEDDINGS_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDINGS_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 # Puedes parametrizar el modelo DeepSeek vía entorno si quieres flexibilidad
 DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash")  # o deepseek-chat
